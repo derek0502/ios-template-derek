@@ -79,6 +79,10 @@
 }
 
 - (IBAction)backPressed:(id)sender {
+    if([[self.navigationController viewControllers]count]>1)
+    {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
 }
 
 - (IBAction)nextPressed:(id)sender {

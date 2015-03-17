@@ -22,6 +22,7 @@
 @property (strong, nonatomic) IBOutlet UIView *footerContainer;
 @property (strong, nonatomic) IBOutlet UIView *footerView;
 
+
 - (IBAction)backPressed:(id)sender;
 - (IBAction)nextPressed:(id)sender;
 
