@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B4954559-E45D-48C3-A4B1-EC637A36FA01</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iosTemplate</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7B100ECB1A6617EF01B6688C38086DEA5F7CB3D2</key>
+		<string>https://github.com/derek0502/ios-template-derek.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iosTemplate.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7B100ECB1A6617EF01B6688C38086DEA5F7CB3D2</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/derek0502/ios-template-derek.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7B100ECB1A6617EF01B6688C38086DEA5F7CB3D2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7B100ECB1A6617EF01B6688C38086DEA5F7CB3D2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iosTemplate</string>
+		</dict>
+	</array>
+</dict>
+</plist>

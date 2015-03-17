@@ -6,6 +6,7 @@ workspace 'iosTemplate.xcworkspace'
 xcodeproj 'iosTemplate.xcodeproj'
 
 pod 'Masonry'
+pod 'UpdateAutoLayoutConstraints'
 
 
 
