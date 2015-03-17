@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Masonry.h"
+#import "MainViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
