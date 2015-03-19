@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Masonry.h"
 
 @interface GeneralViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UIView *navContainer;

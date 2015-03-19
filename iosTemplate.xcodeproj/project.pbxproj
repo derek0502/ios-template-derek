@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		520340011AB7157A005D69F3 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52033FFF1AB7157A005D69F3 /* MainViewController.m */; };
-		5203400D1AB7D3D2005D69F3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5203400A1AB7D3D2005D69F3 /* Default-568h@2x.png */; };
-		5203400E1AB7D3D2005D69F3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5203400B1AB7D3D2005D69F3 /* Default.png */; };
-		5203400F1AB7D3D2005D69F3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5203400C1AB7D3D2005D69F3 /* Default@2x.png */; };
 		520340111AB7DA10005D69F3 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520340101AB7DA10005D69F3 /* MainViewController.xib */; };
+		520340291ABAD799005D69F3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 520340261ABAD799005D69F3 /* Default-568h@2x.png */; };
+		5203402A1ABAD799005D69F3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 520340271ABAD799005D69F3 /* Default.png */; };
+		5203402B1ABAD799005D69F3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 520340281ABAD799005D69F3 /* Default@2x.png */; };
 		52EEB9D71AB2E746004D732A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EEB9D61AB2E746004D732A /* main.m */; };
 		52EEB9DA1AB2E746004D732A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EEB9D91AB2E746004D732A /* AppDelegate.m */; };
 		52EEB9E21AB2E746004D732A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52EEB9E11AB2E746004D732A /* Images.xcassets */; };
@@ -35,10 +35,11 @@
 		1904E761E455067EC2670D9F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		52033FFE1AB7157A005D69F3 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		52033FFF1AB7157A005D69F3 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		5203400A1AB7D3D2005D69F3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		5203400B1AB7D3D2005D69F3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		5203400C1AB7D3D2005D69F3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		520340101AB7DA10005D69F3 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		520340241ABAD526005D69F3 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		520340261ABAD799005D69F3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		520340271ABAD799005D69F3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		520340281ABAD799005D69F3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		52EEB9D11AB2E746004D732A /* iosTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52EEB9D51AB2E746004D732A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52EEB9D61AB2E746004D732A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -84,14 +85,14 @@
 			name = MainViewController;
 			sourceTree = "<group>";
 		};
-		520340031AB7CEDE005D69F3 /* splash */ = {
+		520340251ABAD799005D69F3 /* SplashScreens */ = {
 			isa = PBXGroup;
 			children = (
-				5203400A1AB7D3D2005D69F3 /* Default-568h@2x.png */,
-				5203400B1AB7D3D2005D69F3 /* Default.png */,
-				5203400C1AB7D3D2005D69F3 /* Default@2x.png */,
+				520340261ABAD799005D69F3 /* Default-568h@2x.png */,
+				520340271ABAD799005D69F3 /* Default.png */,
+				520340281ABAD799005D69F3 /* Default@2x.png */,
 			);
-			name = splash;
+			path = SplashScreens;
 			sourceTree = "<group>";
 		};
 		52EEB9C81AB2E746004D732A = {
@@ -123,6 +124,7 @@
 				52EEB9D91AB2E746004D732A /* AppDelegate.m */,
 				52EEB9E11AB2E746004D732A /* Images.xcassets */,
 				52EEB9D41AB2E746004D732A /* Supporting Files */,
+				520340241ABAD526005D69F3 /* PrefixHeader.pch */,
 			);
 			path = iosTemplate;
 			sourceTree = "<group>";
@@ -130,7 +132,7 @@
 		52EEB9D41AB2E746004D732A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				520340031AB7CEDE005D69F3 /* splash */,
+				520340251ABAD799005D69F3 /* SplashScreens */,
 				52EEB9D51AB2E746004D732A /* Info.plist */,
 				52EEB9D61AB2E746004D732A /* main.m */,
 			);
@@ -264,12 +266,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5203400F1AB7D3D2005D69F3 /* Default@2x.png in Resources */,
+				5203402B1ABAD799005D69F3 /* Default@2x.png in Resources */,
 				520340111AB7DA10005D69F3 /* MainViewController.xib in Resources */,
+				520340291ABAD799005D69F3 /* Default-568h@2x.png in Resources */,
 				52EEB9E21AB2E746004D732A /* Images.xcassets in Resources */,
-				5203400D1AB7D3D2005D69F3 /* Default-568h@2x.png in Resources */,
 				52EEB9FF1AB2E7AD004D732A /* GeneralViewController.xib in Resources */,
-				5203400E1AB7D3D2005D69F3 /* Default.png in Resources */,
+				5203402A1ABAD799005D69F3 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +430,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = iosTemplate/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -442,6 +446,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = iosTemplate/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
