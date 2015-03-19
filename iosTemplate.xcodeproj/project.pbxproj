@@ -40,6 +40,7 @@
 		520340261ABAD799005D69F3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		520340271ABAD799005D69F3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		520340281ABAD799005D69F3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		5203402D1ABADB24005D69F3 /* StyleConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StyleConstant.h; sourceTree = "<group>"; };
 		52EEB9D11AB2E746004D732A /* iosTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52EEB9D51AB2E746004D732A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52EEB9D61AB2E746004D732A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -118,13 +119,14 @@
 		52EEB9D31AB2E746004D732A /* iosTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				52033FF81AB71457005D69F3 /* MainViewController */,
-				52EEB9FA1AB2E779004D732A /* GeneralViewController */,
+				520340241ABAD526005D69F3 /* PrefixHeader.pch */,
+				5203402D1ABADB24005D69F3 /* StyleConstant.h */,
 				52EEB9D81AB2E746004D732A /* AppDelegate.h */,
 				52EEB9D91AB2E746004D732A /* AppDelegate.m */,
+				52033FF81AB71457005D69F3 /* MainViewController */,
+				52EEB9FA1AB2E779004D732A /* GeneralViewController */,
 				52EEB9E11AB2E746004D732A /* Images.xcassets */,
 				52EEB9D41AB2E746004D732A /* Supporting Files */,
-				520340241ABAD526005D69F3 /* PrefixHeader.pch */,
 			);
 			path = iosTemplate;
 			sourceTree = "<group>";

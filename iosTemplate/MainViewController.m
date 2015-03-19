@@ -18,6 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self.titleLabel setText:@"Custom Title"];
+    [self.titleLabel setTextColor:COLOR_NormalText];
 }
 
 - (void)didReceiveMemoryWarning {
