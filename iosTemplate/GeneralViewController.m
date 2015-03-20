@@ -93,13 +93,13 @@
     if ([view isKindOfClass:[UILabel class]])
     {
         UILabel *lbl = (UILabel *)view;
-        [lbl setFont:[UIFont fontWithName:fontFamily size:[[lbl font] pointSize]]];
+        [lbl setFont:FONT_REGULAR_SIZE([[lbl font] pointSize])];
     }
     else if([view isKindOfClass:[UIButton class]])
     {
         UIButton *btn = (UIButton *)view;
         UILabel *lbl = [btn titleLabel];
-        [lbl setFont:[UIFont fontWithName:fontFamily size:[[lbl font] pointSize]]];
+        [lbl setFont:FONT_REGULAR_SIZE([[lbl font] pointSize])];
     }
     
     if (isSubViews)
