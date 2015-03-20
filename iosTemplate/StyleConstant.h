@@ -10,3 +10,11 @@
 
 #define COLOR_NormalText        UIColorFromRGB(0xEBEEE5)
 
+
+#define FONT_MEDIUM_SIZE(x)     [UIFont fontWithName:@"DIN-Medium" size:(x)]
+#define FONT_REGULAR_SIZE(x)    [UIFont fontWithName:@"DIN-Regular" size:(x)]
+#define FONT_BOLD_SIZE(x)       [UIFont fontWithName:@"DIN-Bold" size:(x)]
+
+#define FONT_DIN_MEDIUM         @"DIN-Medium"
+#define FONT_DIN_REGULAR        @"DIN-Regular"
+#define FONT_DIN_BOLD           @"DIN-Bold"

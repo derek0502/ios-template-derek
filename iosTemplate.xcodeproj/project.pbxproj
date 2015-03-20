@@ -12,6 +12,9 @@
 		520340291ABAD799005D69F3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 520340261ABAD799005D69F3 /* Default-568h@2x.png */; };
 		5203402A1ABAD799005D69F3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 520340271ABAD799005D69F3 /* Default.png */; };
 		5203402B1ABAD799005D69F3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 520340281ABAD799005D69F3 /* Default@2x.png */; };
+		520340341ABAE146005D69F3 /* DIN-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 520340311ABAE146005D69F3 /* DIN-Bold.otf */; };
+		520340351ABAE146005D69F3 /* DIN-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 520340321ABAE146005D69F3 /* DIN-Medium.otf */; };
+		520340361ABAE146005D69F3 /* DIN-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 520340331ABAE146005D69F3 /* DIN-Regular.otf */; };
 		52EEB9D71AB2E746004D732A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EEB9D61AB2E746004D732A /* main.m */; };
 		52EEB9DA1AB2E746004D732A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EEB9D91AB2E746004D732A /* AppDelegate.m */; };
 		52EEB9E21AB2E746004D732A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52EEB9E11AB2E746004D732A /* Images.xcassets */; };
@@ -41,6 +44,9 @@
 		520340271ABAD799005D69F3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		520340281ABAD799005D69F3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		5203402D1ABADB24005D69F3 /* StyleConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StyleConstant.h; sourceTree = "<group>"; };
+		520340311ABAE146005D69F3 /* DIN-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DIN-Bold.otf"; sourceTree = "<group>"; };
+		520340321ABAE146005D69F3 /* DIN-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DIN-Medium.otf"; sourceTree = "<group>"; };
+		520340331ABAE146005D69F3 /* DIN-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DIN-Regular.otf"; sourceTree = "<group>"; };
 		52EEB9D11AB2E746004D732A /* iosTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52EEB9D51AB2E746004D732A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52EEB9D61AB2E746004D732A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -96,6 +102,16 @@
 			path = SplashScreens;
 			sourceTree = "<group>";
 		};
+		520340301ABADF8B005D69F3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				520340311ABAE146005D69F3 /* DIN-Bold.otf */,
+				520340321ABAE146005D69F3 /* DIN-Medium.otf */,
+				520340331ABAE146005D69F3 /* DIN-Regular.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		52EEB9C81AB2E746004D732A = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +150,7 @@
 		52EEB9D41AB2E746004D732A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				520340301ABADF8B005D69F3 /* Fonts */,
 				520340251ABAD799005D69F3 /* SplashScreens */,
 				52EEB9D51AB2E746004D732A /* Info.plist */,
 				52EEB9D61AB2E746004D732A /* main.m */,
@@ -268,11 +285,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				520340361ABAE146005D69F3 /* DIN-Regular.otf in Resources */,
 				5203402B1ABAD799005D69F3 /* Default@2x.png in Resources */,
 				520340111AB7DA10005D69F3 /* MainViewController.xib in Resources */,
 				520340291ABAD799005D69F3 /* Default-568h@2x.png in Resources */,
+				520340341ABAE146005D69F3 /* DIN-Bold.otf in Resources */,
 				52EEB9E21AB2E746004D732A /* Images.xcassets in Resources */,
 				52EEB9FF1AB2E7AD004D732A /* GeneralViewController.xib in Resources */,
+				520340351ABAE146005D69F3 /* DIN-Medium.otf in Resources */,
 				5203402A1ABAD799005D69F3 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -61,7 +61,7 @@
     [self addConstraintForViewToContainer:self.contentView];
     [self addConstraintForViewToContainer:self.footerView];
     
-    
+    [self setFontFamily:FONT_DIN_REGULAR forView:self.view andSubViews:YES];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -87,4 +87,29 @@
 
 - (IBAction)nextPressed:(id)sender {
 }
+
+-(void)setFontFamily:(NSString*)fontFamily forView:(UIView*)view andSubViews:(BOOL)isSubViews
+{
+    if ([view isKindOfClass:[UILabel class]])
+    {
+        UILabel *lbl = (UILabel *)view;
+        [lbl setFont:[UIFont fontWithName:fontFamily size:[[lbl font] pointSize]]];
+    }
+    else if([view isKindOfClass:[UIButton class]])
+    {
+        UIButton *btn = (UIButton *)view;
+        UILabel *lbl = [btn titleLabel];
+        [lbl setFont:[UIFont fontWithName:fontFamily size:[[lbl font] pointSize]]];
+    }
+    
+    if (isSubViews)
+    {
+        for (UIView *sview in view.subviews)
+        {
+            [self setFontFamily:fontFamily forView:sview andSubViews:YES];
+        }
+    }
+}
+
+
 @end
