@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D9EE4C21AC9B52300E38483 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9EE4C01AC9B52300E38483 /* LoginViewController.m */; };
-		2D9EE4C31AC9B52300E38483 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D9EE4C11AC9B52300E38483 /* LoginViewController.xib */; };
-		2D9EE4C81AC9B7A000E38483 /* OTPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9EE4C61AC9B7A000E38483 /* OTPViewController.m */; };
-		2D9EE4C91AC9B7A000E38483 /* OTPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D9EE4C71AC9B7A000E38483 /* OTPViewController.xib */; };
 		520340011AB7157A005D69F3 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52033FFF1AB7157A005D69F3 /* MainViewController.m */; };
 		520340111AB7DA10005D69F3 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520340101AB7DA10005D69F3 /* MainViewController.xib */; };
 		520340291ABAD799005D69F3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 520340261ABAD799005D69F3 /* Default-568h@2x.png */; };
@@ -40,13 +36,6 @@
 
 /* Begin PBXFileReference section */
 		1904E761E455067EC2670D9F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D9EE4BF1AC9B52300E38483 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		2D9EE4C01AC9B52300E38483 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		2D9EE4C11AC9B52300E38483 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
-		2D9EE4C51AC9B7A000E38483 /* OTPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTPViewController.h; sourceTree = "<group>"; };
-		2D9EE4C61AC9B7A000E38483 /* OTPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTPViewController.m; sourceTree = "<group>"; };
-		2D9EE4C71AC9B7A000E38483 /* OTPViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OTPViewController.xib; sourceTree = "<group>"; };
-		2D9EE4CA1AC9BAED00E38483 /* TagConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TagConstant.h; sourceTree = "<group>"; };
 		52033FFE1AB7157A005D69F3 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		52033FFF1AB7157A005D69F3 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		520340101AB7DA10005D69F3 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
@@ -93,26 +82,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2D9EE4BD1AC9B41100E38483 /* LoginViewController */ = {
-			isa = PBXGroup;
-			children = (
-				2D9EE4BF1AC9B52300E38483 /* LoginViewController.h */,
-				2D9EE4C01AC9B52300E38483 /* LoginViewController.m */,
-				2D9EE4C11AC9B52300E38483 /* LoginViewController.xib */,
-			);
-			name = LoginViewController;
-			sourceTree = "<group>";
-		};
-		2D9EE4C41AC9B78A00E38483 /* OTPViewController */ = {
-			isa = PBXGroup;
-			children = (
-				2D9EE4C51AC9B7A000E38483 /* OTPViewController.h */,
-				2D9EE4C61AC9B7A000E38483 /* OTPViewController.m */,
-				2D9EE4C71AC9B7A000E38483 /* OTPViewController.xib */,
-			);
-			name = OTPViewController;
-			sourceTree = "<group>";
-		};
 		52033FF81AB71457005D69F3 /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,11 +137,8 @@
 			children = (
 				520340241ABAD526005D69F3 /* PrefixHeader.pch */,
 				5203402D1ABADB24005D69F3 /* StyleConstant.h */,
-				2D9EE4CA1AC9BAED00E38483 /* TagConstant.h */,
 				52EEB9D81AB2E746004D732A /* AppDelegate.h */,
 				52EEB9D91AB2E746004D732A /* AppDelegate.m */,
-				2D9EE4C41AC9B78A00E38483 /* OTPViewController */,
-				2D9EE4BD1AC9B41100E38483 /* LoginViewController */,
 				52033FF81AB71457005D69F3 /* MainViewController */,
 				52EEB9FA1AB2E779004D732A /* GeneralViewController */,
 				52EEB9E11AB2E746004D732A /* Images.xcassets */,
@@ -319,14 +285,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D9EE4C31AC9B52300E38483 /* LoginViewController.xib in Resources */,
 				520340361ABAE146005D69F3 /* DIN-Regular.otf in Resources */,
 				5203402B1ABAD799005D69F3 /* Default@2x.png in Resources */,
 				520340111AB7DA10005D69F3 /* MainViewController.xib in Resources */,
 				520340291ABAD799005D69F3 /* Default-568h@2x.png in Resources */,
 				520340341ABAE146005D69F3 /* DIN-Bold.otf in Resources */,
 				52EEB9E21AB2E746004D732A /* Images.xcassets in Resources */,
-				2D9EE4C91AC9B7A000E38483 /* OTPViewController.xib in Resources */,
 				52EEB9FF1AB2E7AD004D732A /* GeneralViewController.xib in Resources */,
 				520340351ABAE146005D69F3 /* DIN-Medium.otf in Resources */,
 				5203402A1ABAD799005D69F3 /* Default.png in Resources */,
@@ -382,10 +346,8 @@
 			files = (
 				520340011AB7157A005D69F3 /* MainViewController.m in Sources */,
 				52EEB9DA1AB2E746004D732A /* AppDelegate.m in Sources */,
-				2D9EE4C81AC9B7A000E38483 /* OTPViewController.m in Sources */,
 				52EEB9D71AB2E746004D732A /* main.m in Sources */,
 				52EEB9FE1AB2E7AD004D732A /* GeneralViewController.m in Sources */,
-				2D9EE4C21AC9B52300E38483 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

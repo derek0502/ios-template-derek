@@ -7,14 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LoginViewController.h"
 #import "MainViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
-- (void)switchToView:(NSString *)tag;
 
 
 @end

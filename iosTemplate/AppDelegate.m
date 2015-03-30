@@ -19,7 +19,7 @@
     // Override point for customization after application launch.
     UIWindow *window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
     self.window=window;
-    LoginViewController *vc = [[LoginViewController alloc]init];
+    MainViewController *vc = [[MainViewController alloc]init];
     UINavigationController *nvc = [[UINavigationController alloc]initWithRootViewController:vc];
     [nvc.navigationBar setHidden:YES];
     self.window.rootViewController = nvc;
@@ -49,24 +49,6 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-}
-
-- (void)switchToView:(NSString *)tag
-{
-    if([tag isEqualToString:TAG_VC_Login])
-    {
-        LoginViewController *vc = [[LoginViewController alloc]init];
-        UINavigationController *nvc = [[UINavigationController alloc]initWithRootViewController:vc];
-        [nvc.navigationBar setHidden:YES];
-        self.window.rootViewController = nvc;
-    }
-    else if([tag isEqualToString:TAG_VC_Main])
-    {
-        MainViewController *vc = [[MainViewController alloc]init];
-        UINavigationController *nvc = [[UINavigationController alloc]initWithRootViewController:vc];
-        [nvc.navigationBar setHidden:YES];
-        self.window.rootViewController = nvc;
-    }
 }
 
 @end

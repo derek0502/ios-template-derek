@@ -23,7 +23,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [self.titleLabel setText:NSStringFromClass([self class])];
     
     [self.navContainer addSubview:self.navView];
     [self.contentContainer addSubview:self.contentView];
