@@ -7,10 +7,12 @@
 //
 
 #import "GeneralView.h"
+#import "TabBarView.h"
+
 
 @interface GeneralView ()
 
-@property (nonatomic, strong) BaseView *tabBarView;
+@property (nonatomic, strong) TabBarView *tabBarView;
 @property (nonatomic, strong) BaseView *horizontalScrollView;
 @property (nonatomic, strong) BaseView *verticalScrollView;
 
@@ -33,7 +35,7 @@
 
 - (void)setupTabBarView {
     
-    _tabBarView = [[BaseView alloc]init];
+    _tabBarView = [[TabBarView alloc]init];
     [_tabBarView setBackgroundColor:[UIColor redColor]];
     
     [self addSubview:_tabBarView];
@@ -66,36 +68,27 @@
 }
 
 - (void)setupTabBarViewConstraints {
-
-    [_tabBarView mas_makeConstraints:^(MASConstraintMaker *make) {
-        
-        make.top.equalTo(self.mas_top).with.offset(20);
-        make.left.equalTo(self.mas_left);
-        make.right.equalTo(self.mas_right);
-        make.height.equalTo(@(50));
-    }];
+    
+    [_tabBarView autoPinEdgeToSuperviewEdge:ALEdgeLeft];
+    [_tabBarView autoPinEdgeToSuperviewEdge:ALEdgeRight];
+    [_tabBarView autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:20.0];
+    [_tabBarView autoSetDimension:ALDimensionHeight toSize:50.0];
 }
 
 - (void)setupHorizontalScrollViewConstraints {
     
-    [_horizontalScrollView mas_makeConstraints:^(MASConstraintMaker *make) {
-        
-        make.top.equalTo(_tabBarView.mas_bottom);
-        make.left.equalTo(self.mas_left);
-        make.right.equalTo(self.mas_right);
-        make.height.equalTo(@(150));
-    }];
+    [_horizontalScrollView autoPinEdgeToSuperviewEdge:ALEdgeLeft];
+    [_horizontalScrollView autoPinEdgeToSuperviewEdge:ALEdgeRight];
+    [_horizontalScrollView autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:_tabBarView];
+    [_horizontalScrollView autoSetDimension:ALDimensionHeight toSize:150.0];
 }
 
 - (void)setupVerticalScrollViewConstraints {
     
-    [_verticalScrollView mas_makeConstraints:^(MASConstraintMaker *make) {
-        
-        make.top.equalTo(_horizontalScrollView.mas_bottom);
-        make.left.equalTo(self.mas_left);
-        make.right.equalTo(self.mas_right);
-        make.bottom.equalTo(self.mas_bottom);
-    }];
+    [_verticalScrollView autoPinEdgeToSuperviewEdge:ALEdgeLeft];
+    [_verticalScrollView autoPinEdgeToSuperviewEdge:ALEdgeRight];
+    [_verticalScrollView autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:_horizontalScrollView];
+    [_verticalScrollView autoPinEdgeToSuperviewEdge:ALEdgeBottom];
 }
 
 @end

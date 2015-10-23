@@ -11,9 +11,7 @@
 
 @interface TabBarView ()
 
-@property (nonatomic, strong) BaseView *tabButton1;
-@property (nonatomic, strong) BaseView *tabButton2;
-@property (nonatomic, strong) BaseView *tabButton3;
+@property (nonatomic, strong) NSArray *tabBarButtons;
 
 @end
 
@@ -25,33 +23,26 @@
 
 - (void)setup {
     
-    [self setupTabBarButton1];
-    [self setupTabBarButton2];
-    [self setupTabBarButton3];
+    [self setupTabBarButtons];
 }
 
-- (void)setupTabBarButton1 {
+- (void)setupTabBarButtons {
     
-    _tabButton1 = [[BaseView alloc]init];
-    [_tabButton1 setBackgroundColor:[UIColor grayColor]];
+    BaseView *tabBarButton1 = [[BaseView alloc]init];
+    [tabBarButton1 setBackgroundColor:[UIColor grayColor]];
     
-    [self addSubview:_tabButton1];
-}
-
-- (void)setupTabBarButton2 {
+    BaseView *tabBarButton2 = [[BaseView alloc]init];
+    [tabBarButton2 setBackgroundColor:[UIColor greenColor]];
     
-    _tabButton2 = [[BaseView alloc]init];
-    [_tabButton2 setBackgroundColor:[UIColor orangeColor]];
+    BaseView *tabBarButton3 = [[BaseView alloc]init];
+    [tabBarButton3 setBackgroundColor:[UIColor orangeColor]];
     
-    [self addSubview:_tabButton2];
-}
-
-- (void)setupTabBarButton3 {
+    _tabBarButtons = [NSArray arrayWithObjects:tabBarButton1, tabBarButton2, tabBarButton3, nil];
     
-    _tabButton3 = [[BaseView alloc]init];
-    [_tabButton3 setBackgroundColor:[UIColor greenColor]];
-    
-    [self addSubview:_tabButton3];
+    for (BaseView *tabBarButton in _tabBarButtons) {
+        
+        [self addSubview:tabBarButton];
+    }
 }
 
 
@@ -59,42 +50,18 @@
 
 - (void)setupConstraints {
     
-    [self setupTabBarButton1Constraints];
-    [self setupTabBarButton2Constraints];
-    [self setupTabBarButton3Constraints];
+    [self setupTabBarButtonsConstraints];
 }
 
-- (void)setupTabBarButton1Constraints {
+- (void)setupTabBarButtonsConstraints {
     
-    [_tabButton1 mas_makeConstraints:^(MASConstraintMaker *make) {
+    [_tabBarButtons autoDistributeViewsAlongAxis:ALAxisHorizontal alignedTo:ALAttributeHorizontal withFixedSpacing:0];
+    
+    for (BaseView *tabBarButton in _tabBarButtons) {
         
-        make.top.mas_equalTo(self.mas_top);
-        make.bottom.mas_equalTo(self.mas_bottom);
-        make.left.mas_equalTo(self.mas_left);
-    }];
+        [tabBarButton autoPinEdgeToSuperviewEdge:ALEdgeTop];
+        [tabBarButton autoPinEdgeToSuperviewEdge:ALEdgeBottom];
+    }
 }
-
-- (void)setupTabBarButton2Constraints {
-    
-    [_tabButton2 mas_makeConstraints:^(MASConstraintMaker *make) {
-        
-        make.top.mas_equalTo(self.mas_top);
-        make.bottom.mas_equalTo(self.mas_bottom);
-        make.left.mas_equalTo(self.mas_right);
-    }];
-}
-
-- (void)setupTabBarButton3Constraints {
-    
-    
-    [_tabButton3 mas_makeConstraints:^(MASConstraintMaker *make) {
-        
-        make.top.mas_equalTo(self.mas_top);
-        make.bottom.mas_equalTo(self.mas_bottom);
-        make.left.mas_equalTo(self.mas_right);
-    }];
-}
-
-
 
 @end
