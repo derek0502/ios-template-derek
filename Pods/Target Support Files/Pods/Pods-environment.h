@@ -12,6 +12,12 @@
 #define COCOAPODS_VERSION_MINOR_Masonry 6
 #define COCOAPODS_VERSION_PATCH_Masonry 1
 
+// PureLayout
+#define COCOAPODS_POD_AVAILABLE_PureLayout
+#define COCOAPODS_VERSION_MAJOR_PureLayout 3
+#define COCOAPODS_VERSION_MINOR_PureLayout 0
+#define COCOAPODS_VERSION_PATCH_PureLayout 1
+
 // UpdateAutoLayoutConstraints
 #define COCOAPODS_POD_AVAILABLE_UpdateAutoLayoutConstraints
 #define COCOAPODS_VERSION_MAJOR_UpdateAutoLayoutConstraints 0

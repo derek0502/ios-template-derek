@@ -7,6 +7,7 @@ xcodeproj 'iosTemplate.xcodeproj'
 
 pod 'Masonry'
 pod 'UpdateAutoLayoutConstraints'
+pod 'PureLayout'
 
 
 

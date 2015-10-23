@@ -6,33 +6,43 @@
 	<dict>
 		<key>Pods-Masonry.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-PureLayout.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-UpdateAutoLayoutConstraints.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>BEB71FF37D5DC52AE4CF0141</key>
+		<key>0003DD6243196414B99FDCB7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C0B12F2C6A2A8295A292251A</key>
+		<key>93126EED84FDEA7386A63B98</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FA631E972400793039F8EB74</key>
+		<key>A268AC5B2354516D9F28A09D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F3368A49BA421A3E14C567CD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
