@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		520340011AB7157A005D69F3 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52033FFF1AB7157A005D69F3 /* MainViewController.m */; };
-		520340111AB7DA10005D69F3 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520340101AB7DA10005D69F3 /* MainViewController.xib */; };
+		2DB428531BDA807200C8F507 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB428521BDA807200C8F507 /* BaseView.m */; settings = {ASSET_TAGS = (); }; };
+		2DB428561BDA835C00C8F507 /* GeneralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB428541BDA835C00C8F507 /* GeneralViewController.m */; settings = {ASSET_TAGS = (); }; };
+		2DB4285A1BDA83B700C8F507 /* GeneralView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB428591BDA83B700C8F507 /* GeneralView.m */; settings = {ASSET_TAGS = (); }; };
 		520340291ABAD799005D69F3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 520340261ABAD799005D69F3 /* Default-568h@2x.png */; };
 		5203402A1ABAD799005D69F3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 520340271ABAD799005D69F3 /* Default.png */; };
 		5203402B1ABAD799005D69F3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 520340281ABAD799005D69F3 /* Default@2x.png */; };
@@ -19,8 +20,6 @@
 		52EEB9DA1AB2E746004D732A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EEB9D91AB2E746004D732A /* AppDelegate.m */; };
 		52EEB9E21AB2E746004D732A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52EEB9E11AB2E746004D732A /* Images.xcassets */; };
 		52EEB9F11AB2E746004D732A /* iosTemplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EEB9F01AB2E746004D732A /* iosTemplateTests.m */; };
-		52EEB9FE1AB2E7AD004D732A /* GeneralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EEB9FC1AB2E7AD004D732A /* GeneralViewController.m */; };
-		52EEB9FF1AB2E7AD004D732A /* GeneralViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52EEB9FD1AB2E7AD004D732A /* GeneralViewController.xib */; };
 		7B13FC7E27A029083B8CE9D6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1904E761E455067EC2670D9F /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -36,9 +35,12 @@
 
 /* Begin PBXFileReference section */
 		1904E761E455067EC2670D9F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		52033FFE1AB7157A005D69F3 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		52033FFF1AB7157A005D69F3 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		520340101AB7DA10005D69F3 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		2DB428511BDA807200C8F507 /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseView.h; path = BaseView/BaseView.h; sourceTree = "<group>"; };
+		2DB428521BDA807200C8F507 /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseView.m; path = BaseView/BaseView.m; sourceTree = "<group>"; };
+		2DB428541BDA835C00C8F507 /* GeneralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GeneralViewController.m; path = GeneralViewController/GeneralViewController.m; sourceTree = "<group>"; };
+		2DB428551BDA835C00C8F507 /* GeneralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GeneralViewController.h; path = GeneralViewController/GeneralViewController.h; sourceTree = "<group>"; };
+		2DB428581BDA83B700C8F507 /* GeneralView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralView.h; sourceTree = "<group>"; };
+		2DB428591BDA83B700C8F507 /* GeneralView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralView.m; sourceTree = "<group>"; };
 		520340241ABAD526005D69F3 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		520340261ABAD799005D69F3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		520340271ABAD799005D69F3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -56,9 +58,6 @@
 		52EEB9EA1AB2E746004D732A /* iosTemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosTemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52EEB9EF1AB2E746004D732A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52EEB9F01AB2E746004D732A /* iosTemplateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iosTemplateTests.m; sourceTree = "<group>"; };
-		52EEB9FB1AB2E7AD004D732A /* GeneralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralViewController.h; sourceTree = "<group>"; };
-		52EEB9FC1AB2E7AD004D732A /* GeneralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralViewController.m; sourceTree = "<group>"; };
-		52EEB9FD1AB2E7AD004D732A /* GeneralViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GeneralViewController.xib; sourceTree = "<group>"; };
 		86B151EBCA654033AC3D1637 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		88AD4546D9C86401B348891C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,14 +81,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		52033FF81AB71457005D69F3 /* MainViewController */ = {
+		2DB428501BDA804800C8F507 /* BaseView */ = {
 			isa = PBXGroup;
 			children = (
-				52033FFE1AB7157A005D69F3 /* MainViewController.h */,
-				52033FFF1AB7157A005D69F3 /* MainViewController.m */,
-				520340101AB7DA10005D69F3 /* MainViewController.xib */,
+				2DB428511BDA807200C8F507 /* BaseView.h */,
+				2DB428521BDA807200C8F507 /* BaseView.m */,
 			);
-			name = MainViewController;
+			name = BaseView;
+			sourceTree = "<group>";
+		};
+		2DB428571BDA838900C8F507 /* GeneralView */ = {
+			isa = PBXGroup;
+			children = (
+				2DB428581BDA83B700C8F507 /* GeneralView.h */,
+				2DB428591BDA83B700C8F507 /* GeneralView.m */,
+			);
+			name = GeneralView;
 			sourceTree = "<group>";
 		};
 		520340251ABAD799005D69F3 /* SplashScreens */ = {
@@ -139,7 +146,8 @@
 				5203402D1ABADB24005D69F3 /* StyleConstant.h */,
 				52EEB9D81AB2E746004D732A /* AppDelegate.h */,
 				52EEB9D91AB2E746004D732A /* AppDelegate.m */,
-				52033FF81AB71457005D69F3 /* MainViewController */,
+				2DB428501BDA804800C8F507 /* BaseView */,
+				2DB428571BDA838900C8F507 /* GeneralView */,
 				52EEB9FA1AB2E779004D732A /* GeneralViewController */,
 				52EEB9E11AB2E746004D732A /* Images.xcassets */,
 				52EEB9D41AB2E746004D732A /* Supporting Files */,
@@ -178,9 +186,8 @@
 		52EEB9FA1AB2E779004D732A /* GeneralViewController */ = {
 			isa = PBXGroup;
 			children = (
-				52EEB9FB1AB2E7AD004D732A /* GeneralViewController.h */,
-				52EEB9FC1AB2E7AD004D732A /* GeneralViewController.m */,
-				52EEB9FD1AB2E7AD004D732A /* GeneralViewController.xib */,
+				2DB428551BDA835C00C8F507 /* GeneralViewController.h */,
+				2DB428541BDA835C00C8F507 /* GeneralViewController.m */,
 			);
 			name = GeneralViewController;
 			sourceTree = "<group>";
@@ -287,11 +294,9 @@
 			files = (
 				520340361ABAE146005D69F3 /* DIN-Regular.otf in Resources */,
 				5203402B1ABAD799005D69F3 /* Default@2x.png in Resources */,
-				520340111AB7DA10005D69F3 /* MainViewController.xib in Resources */,
 				520340291ABAD799005D69F3 /* Default-568h@2x.png in Resources */,
 				520340341ABAE146005D69F3 /* DIN-Bold.otf in Resources */,
 				52EEB9E21AB2E746004D732A /* Images.xcassets in Resources */,
-				52EEB9FF1AB2E7AD004D732A /* GeneralViewController.xib in Resources */,
 				520340351ABAE146005D69F3 /* DIN-Medium.otf in Resources */,
 				5203402A1ABAD799005D69F3 /* Default.png in Resources */,
 			);
@@ -344,10 +349,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				520340011AB7157A005D69F3 /* MainViewController.m in Sources */,
 				52EEB9DA1AB2E746004D732A /* AppDelegate.m in Sources */,
 				52EEB9D71AB2E746004D732A /* main.m in Sources */,
-				52EEB9FE1AB2E7AD004D732A /* GeneralViewController.m in Sources */,
+				2DB428531BDA807200C8F507 /* BaseView.m in Sources */,
+				2DB4285A1BDA83B700C8F507 /* GeneralView.m in Sources */,
+				2DB428561BDA835C00C8F507 /* GeneralViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
