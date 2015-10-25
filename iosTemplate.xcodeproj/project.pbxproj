@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D07B4FA1BDCA3B100938BF7 /* VerticalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D07B4F81BDCA3B100938BF7 /* VerticalTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		2D07B4FD1BDCA3DA00938BF7 /* VerticalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D07B4FC1BDCA3DA00938BF7 /* VerticalTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		2D07B5011BDCACE200938BF7 /* CollectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D07B5001BDCACE200938BF7 /* CollectionTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		2D07B5081BDCAF1200938BF7 /* CollectionTableViewCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D07B5071BDCAF1200938BF7 /* CollectionTableViewCellController.m */; settings = {ASSET_TAGS = (); }; };
+		2D07B50C1BDCB3A200938BF7 /* HorizontalCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D07B50B1BDCB3A200938BF7 /* HorizontalCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		2DB428531BDA807200C8F507 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB428521BDA807200C8F507 /* BaseView.m */; settings = {ASSET_TAGS = (); }; };
 		2DB428561BDA835C00C8F507 /* GeneralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB428541BDA835C00C8F507 /* GeneralViewController.m */; settings = {ASSET_TAGS = (); }; };
 		2DB4285A1BDA83B700C8F507 /* GeneralView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB428591BDA83B700C8F507 /* GeneralView.m */; settings = {ASSET_TAGS = (); }; };
 		2DB4285E1BDA88DF00C8F507 /* TabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB4285D1BDA88DF00C8F507 /* TabBarView.m */; settings = {ASSET_TAGS = (); }; };
+		2DB428631BDA93D700C8F507 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB428621BDA93D700C8F507 /* TabBarViewController.m */; settings = {ASSET_TAGS = (); }; };
 		520340291ABAD799005D69F3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 520340261ABAD799005D69F3 /* Default-568h@2x.png */; };
 		5203402A1ABAD799005D69F3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 520340271ABAD799005D69F3 /* Default.png */; };
 		5203402B1ABAD799005D69F3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 520340281ABAD799005D69F3 /* Default@2x.png */; };
@@ -36,6 +42,16 @@
 
 /* Begin PBXFileReference section */
 		1904E761E455067EC2670D9F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D07B4F81BDCA3B100938BF7 /* VerticalTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VerticalTableViewCell.m; path = VerticalTableViewCell/VerticalTableViewCell.m; sourceTree = "<group>"; };
+		2D07B4F91BDCA3B100938BF7 /* VerticalTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VerticalTableViewCell.h; path = VerticalTableViewCell/VerticalTableViewCell.h; sourceTree = "<group>"; };
+		2D07B4FB1BDCA3DA00938BF7 /* VerticalTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VerticalTableViewController.h; path = VerticalTableViewController/VerticalTableViewController.h; sourceTree = "<group>"; };
+		2D07B4FC1BDCA3DA00938BF7 /* VerticalTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VerticalTableViewController.m; path = VerticalTableViewController/VerticalTableViewController.m; sourceTree = "<group>"; };
+		2D07B4FF1BDCACE200938BF7 /* CollectionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionTableViewCell.h; path = CollectionTableViewCell/CollectionTableViewCell.h; sourceTree = "<group>"; };
+		2D07B5001BDCACE200938BF7 /* CollectionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionTableViewCell.m; path = CollectionTableViewCell/CollectionTableViewCell.m; sourceTree = "<group>"; };
+		2D07B5061BDCAF1200938BF7 /* CollectionTableViewCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionTableViewCellController.h; path = CollectionTableViewCellController/CollectionTableViewCellController.h; sourceTree = "<group>"; };
+		2D07B5071BDCAF1200938BF7 /* CollectionTableViewCellController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionTableViewCellController.m; path = CollectionTableViewCellController/CollectionTableViewCellController.m; sourceTree = "<group>"; };
+		2D07B50A1BDCB3A200938BF7 /* HorizontalCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HorizontalCollectionViewCell.h; path = HorizontalCollectionViewCell/HorizontalCollectionViewCell.h; sourceTree = "<group>"; };
+		2D07B50B1BDCB3A200938BF7 /* HorizontalCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HorizontalCollectionViewCell.m; path = HorizontalCollectionViewCell/HorizontalCollectionViewCell.m; sourceTree = "<group>"; };
 		2DB428511BDA807200C8F507 /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseView.h; path = BaseView/BaseView.h; sourceTree = "<group>"; };
 		2DB428521BDA807200C8F507 /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseView.m; path = BaseView/BaseView.m; sourceTree = "<group>"; };
 		2DB428541BDA835C00C8F507 /* GeneralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GeneralViewController.m; path = GeneralViewController/GeneralViewController.m; sourceTree = "<group>"; };
@@ -44,6 +60,8 @@
 		2DB428591BDA83B700C8F507 /* GeneralView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralView.m; sourceTree = "<group>"; };
 		2DB4285C1BDA88DF00C8F507 /* TabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabBarView.h; path = TabBarView/TabBarView.h; sourceTree = "<group>"; };
 		2DB4285D1BDA88DF00C8F507 /* TabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabBarView.m; path = TabBarView/TabBarView.m; sourceTree = "<group>"; };
+		2DB428611BDA93D700C8F507 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabBarViewController.h; path = TabBarViewController/TabBarViewController.h; sourceTree = "<group>"; };
+		2DB428621BDA93D700C8F507 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabBarViewController.m; path = TabBarViewController/TabBarViewController.m; sourceTree = "<group>"; };
 		520340241ABAD526005D69F3 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		520340261ABAD799005D69F3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		520340271ABAD799005D69F3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -84,6 +102,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D07B4F01BDC9DF900938BF7 /* VerticalTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2D07B4F91BDCA3B100938BF7 /* VerticalTableViewCell.h */,
+				2D07B4F81BDCA3B100938BF7 /* VerticalTableViewCell.m */,
+			);
+			name = VerticalTableViewCell;
+			sourceTree = "<group>";
+		};
+		2D07B4F41BDCA22600938BF7 /* VerticalTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2D07B4FB1BDCA3DA00938BF7 /* VerticalTableViewController.h */,
+				2D07B4FC1BDCA3DA00938BF7 /* VerticalTableViewController.m */,
+			);
+			name = VerticalTableViewController;
+			sourceTree = "<group>";
+		};
+		2D07B4FE1BDCAC0600938BF7 /* CollectionTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2D07B4FF1BDCACE200938BF7 /* CollectionTableViewCell.h */,
+				2D07B5001BDCACE200938BF7 /* CollectionTableViewCell.m */,
+			);
+			name = CollectionTableViewCell;
+			sourceTree = "<group>";
+		};
+		2D07B5021BDCAE9400938BF7 /* CollectionTableViewCellController */ = {
+			isa = PBXGroup;
+			children = (
+				2D07B5061BDCAF1200938BF7 /* CollectionTableViewCellController.h */,
+				2D07B5071BDCAF1200938BF7 /* CollectionTableViewCellController.m */,
+			);
+			name = CollectionTableViewCellController;
+			sourceTree = "<group>";
+		};
+		2D07B5091BDCB35B00938BF7 /* HorizontalCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2D07B50A1BDCB3A200938BF7 /* HorizontalCollectionViewCell.h */,
+				2D07B50B1BDCB3A200938BF7 /* HorizontalCollectionViewCell.m */,
+			);
+			name = HorizontalCollectionViewCell;
+			sourceTree = "<group>";
+		};
 		2DB428501BDA804800C8F507 /* BaseView */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +172,15 @@
 				2DB4285D1BDA88DF00C8F507 /* TabBarView.m */,
 			);
 			name = TabBarView;
+			sourceTree = "<group>";
+		};
+		2DB428601BDA933F00C8F507 /* TabBarViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2DB428611BDA93D700C8F507 /* TabBarViewController.h */,
+				2DB428621BDA93D700C8F507 /* TabBarViewController.m */,
+			);
+			name = TabBarViewController;
 			sourceTree = "<group>";
 		};
 		520340251ABAD799005D69F3 /* SplashScreens */ = {
@@ -159,9 +231,15 @@
 				52EEB9D81AB2E746004D732A /* AppDelegate.h */,
 				52EEB9D91AB2E746004D732A /* AppDelegate.m */,
 				2DB428501BDA804800C8F507 /* BaseView */,
+				2D07B4FE1BDCAC0600938BF7 /* CollectionTableViewCell */,
+				2D07B5021BDCAE9400938BF7 /* CollectionTableViewCellController */,
 				2DB428571BDA838900C8F507 /* GeneralView */,
 				52EEB9FA1AB2E779004D732A /* GeneralViewController */,
+				2D07B5091BDCB35B00938BF7 /* HorizontalCollectionViewCell */,
 				2DB4285B1BDA88A900C8F507 /* TabBarView */,
+				2DB428601BDA933F00C8F507 /* TabBarViewController */,
+				2D07B4F01BDC9DF900938BF7 /* VerticalTableViewCell */,
+				2D07B4F41BDCA22600938BF7 /* VerticalTableViewController */,
 				52EEB9E11AB2E746004D732A /* Images.xcassets */,
 				52EEB9D41AB2E746004D732A /* Supporting Files */,
 			);
@@ -364,10 +442,16 @@
 			files = (
 				2DB4285E1BDA88DF00C8F507 /* TabBarView.m in Sources */,
 				52EEB9DA1AB2E746004D732A /* AppDelegate.m in Sources */,
+				2D07B5081BDCAF1200938BF7 /* CollectionTableViewCellController.m in Sources */,
+				2DB428631BDA93D700C8F507 /* TabBarViewController.m in Sources */,
 				52EEB9D71AB2E746004D732A /* main.m in Sources */,
 				2DB428531BDA807200C8F507 /* BaseView.m in Sources */,
+				2D07B50C1BDCB3A200938BF7 /* HorizontalCollectionViewCell.m in Sources */,
+				2D07B5011BDCACE200938BF7 /* CollectionTableViewCell.m in Sources */,
+				2D07B4FD1BDCA3DA00938BF7 /* VerticalTableViewController.m in Sources */,
 				2DB4285A1BDA83B700C8F507 /* GeneralView.m in Sources */,
 				2DB428561BDA835C00C8F507 /* GeneralViewController.m in Sources */,
+				2D07B4FA1BDCA3B100938BF7 /* VerticalTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

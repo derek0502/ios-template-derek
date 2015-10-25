@@ -12,10 +12,6 @@
 
 @interface GeneralView ()
 
-@property (nonatomic, strong) TabBarView *tabBarView;
-@property (nonatomic, strong) BaseView *horizontalScrollView;
-@property (nonatomic, strong) BaseView *verticalScrollView;
-
 @end
 
 
@@ -28,33 +24,22 @@
     
     [self setBackgroundColor:[UIColor whiteColor]];
     
-    [self setupTabBarView];
-    [self setupHorizontalScrollView];
-    [self setupVerticalScrollView];
+    [self setupTabBarViewContainer];
+    [self setupVerticalScrollViewContainer];
 }
 
-- (void)setupTabBarView {
+- (void)setupTabBarViewContainer {
     
-    _tabBarView = [[TabBarView alloc]init];
-    [_tabBarView setBackgroundColor:[UIColor redColor]];
+    _tabBarViewContainer = [[BaseView alloc]init];
     
-    [self addSubview:_tabBarView];
+    [self addSubview:_tabBarViewContainer];
 }
 
-- (void)setupHorizontalScrollView {
+- (void)setupVerticalScrollViewContainer {
     
-    _horizontalScrollView = [[BaseView alloc]init];
-    [_horizontalScrollView setBackgroundColor:[UIColor blueColor]];
+    _verticalScrollViewContainer = [[BaseView alloc]init];
     
-    [self addSubview:_horizontalScrollView];
-}
-
-- (void)setupVerticalScrollView {
-    
-    _verticalScrollView = [[BaseView alloc]init];
-    [_verticalScrollView setBackgroundColor:[UIColor yellowColor]];
-    
-    [self addSubview:_verticalScrollView];
+    [self addSubview:_verticalScrollViewContainer];
 }
 
 
@@ -62,33 +47,24 @@
 
 - (void)setupConstraints {
     
-    [self setupTabBarViewConstraints];
-    [self setupHorizontalScrollViewConstraints];
-    [self setupVerticalScrollViewConstraints];
+    [self setupTabBarViewContainerConstraints];
+    [self setupVerticalScrollViewContainerConstraints];
 }
 
-- (void)setupTabBarViewConstraints {
+- (void)setupTabBarViewContainerConstraints {
     
-    [_tabBarView autoPinEdgeToSuperviewEdge:ALEdgeLeft];
-    [_tabBarView autoPinEdgeToSuperviewEdge:ALEdgeRight];
-    [_tabBarView autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:20.0];
-    [_tabBarView autoSetDimension:ALDimensionHeight toSize:50.0];
+    [_tabBarViewContainer autoPinEdgeToSuperviewEdge:ALEdgeLeft];
+    [_tabBarViewContainer autoPinEdgeToSuperviewEdge:ALEdgeRight];
+    [_tabBarViewContainer autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:20.0];
+    [_tabBarViewContainer autoSetDimension:ALDimensionHeight toSize:50.0];
 }
 
-- (void)setupHorizontalScrollViewConstraints {
+- (void)setupVerticalScrollViewContainerConstraints {
     
-    [_horizontalScrollView autoPinEdgeToSuperviewEdge:ALEdgeLeft];
-    [_horizontalScrollView autoPinEdgeToSuperviewEdge:ALEdgeRight];
-    [_horizontalScrollView autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:_tabBarView];
-    [_horizontalScrollView autoSetDimension:ALDimensionHeight toSize:150.0];
-}
-
-- (void)setupVerticalScrollViewConstraints {
-    
-    [_verticalScrollView autoPinEdgeToSuperviewEdge:ALEdgeLeft];
-    [_verticalScrollView autoPinEdgeToSuperviewEdge:ALEdgeRight];
-    [_verticalScrollView autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:_horizontalScrollView];
-    [_verticalScrollView autoPinEdgeToSuperviewEdge:ALEdgeBottom];
+    [_verticalScrollViewContainer autoPinEdgeToSuperviewEdge:ALEdgeLeft];
+    [_verticalScrollViewContainer autoPinEdgeToSuperviewEdge:ALEdgeRight];
+    [_verticalScrollViewContainer autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:_tabBarViewContainer];
+    [_verticalScrollViewContainer autoPinEdgeToSuperviewEdge:ALEdgeBottom];
 }
 
 @end

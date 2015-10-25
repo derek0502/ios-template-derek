@@ -14,8 +14,8 @@
 
 #pragma mark - Initialization
 
-- (instancetype)init
-{
+- (instancetype)init {
+    
     self = [super init];
     
     if (self) {
@@ -30,16 +30,16 @@
 
 #pragma mark - Setup
 
-- (void)setup
-{
+- (void)setup {
+    
     // Abstract method.
 }
 
 
 #pragma mark - Setup Constraints
 
-- (void)setupConstraints
-{
+- (void)setupConstraints {
+    
     // Abstract method.
 }
 

@@ -7,7 +7,13 @@
 //
 
 #import "GeneralViewController.h"
+
+// Views
 #import "GeneralView.h"
+
+// Controllers
+#import "TabBarViewController.h"
+#import "VerticalTableViewController.h"
 
 
 @interface GeneralViewController ()
@@ -29,33 +35,38 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    [self setFontFamily:FONT_DIN_REGULAR forView:self.view andSubViews:YES];
+    [self setupTabBarView];
+    
+    [self setupVerticalTableView];
 }
 
 
-#pragma mark - Helpers
+#pragma mark - Accessors
 
-- (void)setFontFamily:(NSString*)fontFamily forView:(UIView*)view andSubViews:(BOOL)isSubViews {
+- (GeneralView *)contentView {
     
-    if ([view isKindOfClass:[UILabel class]]) {
-        
-        UILabel *lbl = (UILabel *)view;
-        [lbl setFont:FONT_REGULAR_SIZE([[lbl font] pointSize])];
-        
-    } else if([view isKindOfClass:[UIButton class]]) {
-        
-        UIButton *btn = (UIButton *)view;
-        UILabel *lbl = [btn titleLabel];
-        [lbl setFont:FONT_REGULAR_SIZE([[lbl font] pointSize])];
-    }
+    return (GeneralView *)self.view;
+}
+
+
+#pragma mark - Setup
+
+- (void)setupTabBarView {
     
-    if (isSubViews) {
-        
-        for (UIView *sview in view.subviews) {
-            
-            [self setFontFamily:fontFamily forView:sview andSubViews:YES];
-        }
-    }
+    TabBarViewController *tabBarViewController = [[TabBarViewController alloc]init];
+    
+    [self addChildViewController:tabBarViewController];
+    [self.contentView.tabBarViewContainer addSubview:tabBarViewController.view];
+    [tabBarViewController.view autoPinEdgesToSuperviewEdges];
+}
+
+- (void)setupVerticalTableView {
+    
+    VerticalTableViewController *verticalTableViewController = [[VerticalTableViewController alloc]init];
+    
+    [self addChildViewController:verticalTableViewController];
+    [self.contentView.verticalScrollViewContainer addSubview:verticalTableViewController.view];
+    [verticalTableViewController.view autoPinEdgesToSuperviewEdges];
 }
 
 @end

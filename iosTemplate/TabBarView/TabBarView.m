@@ -11,8 +11,6 @@
 
 @interface TabBarView ()
 
-@property (nonatomic, strong) NSArray *tabBarButtons;
-
 @end
 
 
@@ -23,26 +21,40 @@
 
 - (void)setup {
     
+    [self setBackgroundColor:MYCOLOR_GREY];
+    
     [self setupTabBarButtons];
+    [self setupSelectedIndicator];
 }
 
 - (void)setupTabBarButtons {
     
-    BaseView *tabBarButton1 = [[BaseView alloc]init];
-    [tabBarButton1 setBackgroundColor:[UIColor grayColor]];
+    UIButton *tabBarButton1 = [[UIButton alloc]init];
+    [tabBarButton1 setTitle:@"HOT" forState:UIControlStateNormal];
     
-    BaseView *tabBarButton2 = [[BaseView alloc]init];
-    [tabBarButton2 setBackgroundColor:[UIColor greenColor]];
+    UIButton *tabBarButton2 = [[UIButton alloc]init];
+    [tabBarButton2 setTitle:@"TRENDING" forState:UIControlStateNormal];
     
-    BaseView *tabBarButton3 = [[BaseView alloc]init];
-    [tabBarButton3 setBackgroundColor:[UIColor orangeColor]];
+    UIButton *tabBarButton3 = [[UIButton alloc]init];
+    [tabBarButton3 setTitle:@"FRESH" forState:UIControlStateNormal];
     
     _tabBarButtons = [NSArray arrayWithObjects:tabBarButton1, tabBarButton2, tabBarButton3, nil];
     
-    for (BaseView *tabBarButton in _tabBarButtons) {
+    for (UIButton *tabBarButton in _tabBarButtons) {
+        
+        [tabBarButton.titleLabel setFont:FONT_BOLD_BIG];
+        [tabBarButton.titleLabel setTextColor:MYCOLOR_WHITE];
         
         [self addSubview:tabBarButton];
     }
+}
+
+- (void)setupSelectedIndicator {
+    
+    _selectedIndicator = [[BaseView alloc]init];
+    [_selectedIndicator setBackgroundColor:[UIColor whiteColor]];
+    
+    [self addSubview: _selectedIndicator];
 }
 
 
@@ -51,17 +63,26 @@
 - (void)setupConstraints {
     
     [self setupTabBarButtonsConstraints];
+    [self setupSelectedIndicatorConstraints];
 }
 
 - (void)setupTabBarButtonsConstraints {
     
     [_tabBarButtons autoDistributeViewsAlongAxis:ALAxisHorizontal alignedTo:ALAttributeHorizontal withFixedSpacing:0];
     
-    for (BaseView *tabBarButton in _tabBarButtons) {
+    for (UIButton *tabBarButton in _tabBarButtons) {
         
         [tabBarButton autoPinEdgeToSuperviewEdge:ALEdgeTop];
         [tabBarButton autoPinEdgeToSuperviewEdge:ALEdgeBottom];
     }
+}
+
+- (void)setupSelectedIndicatorConstraints {
+    
+    [_selectedIndicator autoPinEdgeToSuperviewEdge:ALEdgeBottom];
+    [_selectedIndicator autoMatchDimension:ALDimensionWidth toDimension:ALDimensionWidth ofView:[_tabBarButtons firstObject]];
+    [_selectedIndicator autoSetDimension:ALDimensionHeight toSize:3.0];
+    [_selectedIndicator autoPinEdge:ALEdgeLeft toEdge:ALEdgeLeft ofView:[_tabBarButtons firstObject]];
 }
 
 @end

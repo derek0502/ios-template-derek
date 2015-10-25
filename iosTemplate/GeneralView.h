@@ -10,4 +10,7 @@
 
 @interface GeneralView : BaseView
 
+@property (nonatomic, strong) BaseView *tabBarViewContainer;
+@property (nonatomic, strong) BaseView *verticalScrollViewContainer;
+
 @end

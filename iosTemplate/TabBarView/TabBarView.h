@@ -10,4 +10,7 @@
 
 @interface TabBarView : BaseView
 
+@property (nonatomic, strong) NSArray *tabBarButtons;
+@property (nonatomic, strong) BaseView *selectedIndicator;
+
 @end
