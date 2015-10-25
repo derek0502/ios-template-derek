@@ -84,15 +84,19 @@
     [_myImageView autoPinEdgeToSuperviewEdge:ALEdgeLeft];
     [_myImageView autoPinEdgeToSuperviewEdge:ALEdgeRight];
     [_myImageView autoPinEdgeToSuperviewEdge:ALEdgeBottom withInset:20.0];
-    [_myImageView autoSetDimension:ALDimensionHeight toSize:150.0];
 }
 
 
-#pragma mark - Pubilc
+#pragma mark - Setters
 
-- (void)setTitle:(NSString *)title {
+- (void)setModel:(PostModel *)model {
     
-    _titleLabel.text = title;
+    _model = model;
+    
+    [_titleLabel setText:_model.title];
+    
+    UIImage *image = [UIImage imageNamed:_model.imageName];
+    [_myImageView setImage:image];
 }
 
 @end

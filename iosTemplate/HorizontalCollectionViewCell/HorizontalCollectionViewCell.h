@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+// Models
+#import "PostModel.h"
+
+
 @interface HorizontalCollectionViewCell : UICollectionViewCell
 
 @property (nonatomic, strong) NSLayoutConstraint *leftConstraint;
-
-- (void)setText:(NSString *)text;
+@property (nonatomic, strong) PostModel *model;
 
 @end

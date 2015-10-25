@@ -44,7 +44,14 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     
-    return 10;
+    NSInteger numberOfItem = 0;
+    
+    if (_dataSource) {
+        
+        numberOfItem = [_dataSource count];
+    }
+    
+    return numberOfItem;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -61,17 +68,7 @@
 
     }
     
-    if (indexPath.row == 0) {
-        
-        [cell setText:@"skdhfjks"];
-        
-    } else if (indexPath.row == 1) {
-        
-        [cell setText:@"dskjfhk jksdhf jkshd fk"];
-        
-    } else if (indexPath.row == 2) {
-        [cell setText:@"sdkjfhsjk fjksdf kjshkfjhsdkjf kjsfk"];
-    }
+    [cell setModel:[_dataSource objectAtIndex:indexPath.row]];
     
     return cell;
 }
@@ -81,7 +78,14 @@
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    return CGSizeMake(160.0, 168.0);
+    if(indexPath.row == 0) {
+        
+        return CGSizeMake(168.0, 168.0);
+        
+    } else {
+        
+        return CGSizeMake(160.0, 168.0);
+    }
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
@@ -92,6 +96,27 @@
 - (UIEdgeInsets)collectionView:(UICollectionView*)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
     
     return UIEdgeInsetsZero;
+}
+
+
+#pragma - Setters
+
+- (void)setDataSource:(NSArray<PostModel *> *)dataSource {
+    
+    _dataSource = dataSource;
+    [self.collectionView reloadData];
+}
+
+#pragma - Accessors
+
+- (CollectionTableViewCell *)contentView {
+    
+    return (CollectionTableViewCell *)self.view;
+}
+
+- (UICollectionView *)collectionView {
+    
+    return (UICollectionView *)self.contentView.collectionView;
 }
 
 @end

@@ -22,7 +22,7 @@
 
 - (void)setup {
     
-    [self setBackgroundColor:[UIColor whiteColor]];
+    [self setBackgroundColor:MYCOLOR_GREY];
     
     [self setupTabBarViewContainer];
     [self setupVerticalScrollViewContainer];

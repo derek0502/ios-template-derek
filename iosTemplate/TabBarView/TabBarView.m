@@ -79,7 +79,7 @@
 
 - (void)setupSelectedIndicatorConstraints {
     
-    [_selectedIndicator autoPinEdgeToSuperviewEdge:ALEdgeBottom];
+    [_selectedIndicator autoPinEdgeToSuperviewEdge:ALEdgeBottom withInset:2.0];
     [_selectedIndicator autoMatchDimension:ALDimensionWidth toDimension:ALDimensionWidth ofView:[_tabBarButtons firstObject]];
     [_selectedIndicator autoSetDimension:ALDimensionHeight toSize:3.0];
     [_selectedIndicator autoPinEdge:ALEdgeLeft toEdge:ALEdgeLeft ofView:[_tabBarButtons firstObject]];

@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+// Models
+#import "PostModel.h"
+
 @interface CollectionTableViewCellController : UIViewController
+
+@property (nonatomic, strong) NSArray<PostModel *> *dataSource;
 
 @end

@@ -94,6 +94,15 @@
     [_label setText:text];
 }
 
+#pragma mark - Setters
+
+- (void)setModel:(PostModel *)model {
+    
+    [_label setText:model.title];
+    UIImage *image = [UIImage imageNamed:model.imageName];
+    [_imageView setImage:image];
+}
+
 
 
 @end

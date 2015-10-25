@@ -6,10 +6,13 @@
 //  Copyright © 2015 Derek Cheung. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <UIKit/UIKit.h>\
+
+// Models
+#import "PostModel.h"
 
 @interface VerticalTableViewCell : UITableViewCell
 
-- (void)setTitle:(NSString *)title;
+@property (nonatomic, strong) PostModel *model;
 
 @end
