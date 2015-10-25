@@ -6,11 +6,11 @@
 // project.
 
 
-// Masonry
-#define COCOAPODS_POD_AVAILABLE_Masonry
-#define COCOAPODS_VERSION_MAJOR_Masonry 0
-#define COCOAPODS_VERSION_MINOR_Masonry 6
-#define COCOAPODS_VERSION_PATCH_Masonry 1
+// JSONModel
+#define COCOAPODS_POD_AVAILABLE_JSONModel
+#define COCOAPODS_VERSION_MAJOR_JSONModel 1
+#define COCOAPODS_VERSION_MINOR_JSONModel 1
+#define COCOAPODS_VERSION_PATCH_JSONModel 2
 
 // PureLayout
 #define COCOAPODS_POD_AVAILABLE_PureLayout

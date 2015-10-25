@@ -1,15 +1,15 @@
 PODS:
-  - Masonry (0.6.1)
+  - JSONModel (1.1.2)
   - PureLayout (3.0.1)
   - UpdateAutoLayoutConstraints (0.2.0)
 
 DEPENDENCIES:
-  - Masonry
+  - JSONModel
   - PureLayout
   - UpdateAutoLayoutConstraints
 
 SPEC CHECKSUMS:
-  Masonry: 4972309f2f134de9dd312f4dc4a21359b50e6caa
+  JSONModel: 216584d0311b053ff714f1d6cb700dbf890847bc
   PureLayout: f35f5384c9c4e4479df041dbe33ad7577b71ddfb
   UpdateAutoLayoutConstraints: f11683d1c88eae919ee57a19667969422fd9c29d
 
